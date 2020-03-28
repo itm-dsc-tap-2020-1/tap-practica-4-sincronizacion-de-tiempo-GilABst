@@ -22,5 +22,5 @@ hora_actual=hora_actual-y
 print("\n Hora real ACTUAL:%s" %hora_actual)
 
 print ("\n Ajustando reloj de la maquina.... " )
-os.system('date -u %s' %hora_actual)
+os.system(f"date --set '{hora_actual}'")
 print("\n Ajustado con exito")
